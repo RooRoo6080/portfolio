@@ -109,6 +109,19 @@ Widget _buildMobile(BuildContext context, Widget text, Widget image) {
       maxWidth: getMobileMaxWidth(context),
     ),
     width: double.infinity,
-    child: text,
+    child: Column(
+      children: [
+        Expanded(
+          child: text,
+        ),
+        Flex(
+          children: [
+            image,
+            SizedBox(height: 20),
+          ],
+          direction: Axis.vertical,
+        )
+      ],
+    ),
   );
 }

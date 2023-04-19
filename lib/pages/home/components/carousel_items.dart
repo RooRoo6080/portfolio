@@ -68,11 +68,33 @@ List<CarouselItemModel> carouselItems = List.generate(
         ],
       ),
     ),
-    image: Container(
-      child: Image.asset(
-        "assets/person.png",
-        fit: BoxFit.contain,
-      ),
-    ),
+    image: Center(
+        child: Column(
+      children: [
+        Image.asset(
+          "assets/person.png",
+          width: 200,
+        ),
+        SizedBox(height: 10),
+        Text(
+          "ABOUT ME",
+          style: GoogleFonts.oswald(
+            color: Colors.white,
+            fontWeight: FontWeight.w900,
+            height: 1.3,
+            fontSize: 35.0,
+          ),
+        ),
+        SizedBox(height: 10),
+        Text(
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          style: TextStyle(
+            color: kCaptionColor,
+            height: 1.5,
+            fontSize: 15.0,
+          ),
+        ),
+      ],
+    )),
   ),
 );

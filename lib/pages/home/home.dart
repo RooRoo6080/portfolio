@@ -31,12 +31,15 @@ class Home extends StatelessWidget {
               height: 70.0,
             ),
             Projects(),
+            SizedBox(
+              height: 20.0,
+            ),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 28.0),
               child: PortfolioStats(),
             ),
             SizedBox(
-              height: 50.0,
+              height: 20.0,
             ),
             Footer(),
           ],

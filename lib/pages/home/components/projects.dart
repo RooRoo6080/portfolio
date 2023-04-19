@@ -62,19 +62,135 @@ class Projects extends StatelessWidget {
                       ],
                     ),
                   ),
+                  SizedBox(
+                    width: 25.0,
+                  ),
                   Expanded(
                     flex: constraints.maxWidth > 720.0 ? 1 : 0,
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Row(
-                          children: [
-                          ],
+                        ElevatedButton(
+                          onPressed: () {},
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: kPrimaryColor,
+                            padding: EdgeInsets.all(30),
+                            foregroundColor: Colors.white,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                          ),
+                          child: Text(
+                            "GPT VOICE ASSISTANT",
+                            style: GoogleFonts.oswald(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w500,
+                              fontSize: 20.0,
+                            ),
+                          ),
+                        ),
+                        SizedBox(height: 15),
+                        ElevatedButton(
+                          onPressed: () {},
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: kPrimaryColor,
+                            padding: EdgeInsets.all(30),
+                            foregroundColor: Colors.white,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                          ),
+                          child: Text(
+                            "ANDROID VOICE ASSISTANT",
+                            style: GoogleFonts.oswald(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w500,
+                              fontSize: 20.0,
+                            ),
+                          ),
+                        ),
+                        SizedBox(height: 15),
+                        ElevatedButton(
+                          onPressed: () {},
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: kPrimaryColor,
+                            padding: EdgeInsets.all(30),
+                            foregroundColor: Colors.white,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                          ),
+                          child: Text(
+                            "ROOBOT - DISCORD BOT",
+                            style: GoogleFonts.oswald(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w500,
+                              fontSize: 20.0,
+                            ),
+                          ),
+                        ),
+                        SizedBox(height: 15),
+                        ElevatedButton(
+                          onPressed: () {},
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: kPrimaryColor,
+                            padding: EdgeInsets.all(30),
+                            foregroundColor: Colors.white,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                          ),
+                          child: Text(
+                            "TIC-TAC-TOE",
+                            style: GoogleFonts.oswald(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w500,
+                              fontSize: 20.0,
+                            ),
+                          ),
+                        ),
+                        SizedBox(height: 15),
+                        ElevatedButton(
+                          onPressed: () {},
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: kPrimaryColor,
+                            padding: EdgeInsets.all(30),
+                            foregroundColor: Colors.white,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                          ),
+                          child: Text(
+                            "ANTWEIGHT COMBAT ROBOT",
+                            style: GoogleFonts.oswald(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w500,
+                              fontSize: 20.0,
+                            ),
+                          ),
+                        ),
+                        SizedBox(height: 15),
+                        ElevatedButton(
+                          onPressed: () {},
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: kPrimaryColor,
+                            padding: EdgeInsets.all(30),
+                            foregroundColor: Colors.white,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                          ),
+                          child: Text(
+                            "BEETLEWEIGHT COMBAT ROBOT",
+                            style: GoogleFonts.oswald(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w500,
+                              fontSize: 20.0,
+                            ),
+                          ),
                         ),
                       ],
                     ),
-                  ),
-                  SizedBox(
-                    width: 25.0,
                   ),
                 ],
               ),
