@@ -3,6 +3,10 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:web_portfolio/models/carousel_item_model.dart';
 import 'package:web_portfolio/utils/constants.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+final Uri _urlG = Uri.parse('https://github.com/RooRoo6080');
+final Uri _urlYT = Uri.parse('https://www.youtube.com/@rooroo6080');
 
 List<CarouselItemModel> carouselItems = List.generate(
   5,
@@ -54,14 +58,18 @@ List<CarouselItemModel> carouselItems = List.generate(
                   FontAwesomeIcons.github,
                   color: Colors.white,
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  launchUrl(_urlG);
+                },
               ),
               IconButton(
                 icon: Icon(
                   FontAwesomeIcons.youtube,
                   color: Colors.white,
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  launchUrl(_urlYT);
+                },
               ),
             ],
           ),

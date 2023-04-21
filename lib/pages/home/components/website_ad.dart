@@ -3,6 +3,11 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_wrapper.dart';
 import 'package:web_portfolio/utils/constants.dart';
 import 'package:web_portfolio/utils/screen_helper.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+final Uri _urlL = Uri.parse('https://github.com/RooRoo6080/search-gpt/blob/main/README.md');
+final Uri _urlT = Uri.parse('https://chrome.google.com/webstore/detail/searchgpt/nemhpjoggiokeajmkekkdkapjehpfaff?hl=en&authuser=0');
+final Uri _urlC = Uri.parse('https://github.com/RooRoo6080/search-gpt');
 
 class WebsiteAd extends StatelessWidget {
   @override
@@ -76,7 +81,9 @@ class WebsiteAd extends StatelessWidget {
                             Row(
                               children: [
                                 ElevatedButton(
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    launchUrl(_urlL);
+                                  },
                                   style: ElevatedButton.styleFrom(
                                     backgroundColor: kPrimaryColor,
                                     padding: EdgeInsets.all(20),
@@ -94,7 +101,9 @@ class WebsiteAd extends StatelessWidget {
                                   width: 10.0,
                                 ),
                                 OutlinedButton(
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    launchUrl(_urlT);
+                                  },
                                   style: ElevatedButton.styleFrom(
                                     padding: EdgeInsets.all(20),
                                     foregroundColor: kPrimaryColor,
@@ -117,7 +126,9 @@ class WebsiteAd extends StatelessWidget {
                               height: 10.0,
                             ),
                             OutlinedButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                    launchUrl(_urlC);
+                                  },
                               style: ElevatedButton.styleFrom(
                                 padding: EdgeInsets.all(20),
                                 foregroundColor: kPrimaryColor,

@@ -111,16 +111,14 @@ Widget _buildMobile(BuildContext context, Widget text, Widget image) {
     width: double.infinity,
     child: Column(
       children: [
-        Expanded(
-          child: text,
-        ),
         Flex(
           children: [
-            image,
+            text,
             SizedBox(height: 20),
+            image,
           ],
           direction: Axis.vertical,
-        )
+        ),
       ],
     ),
   );
