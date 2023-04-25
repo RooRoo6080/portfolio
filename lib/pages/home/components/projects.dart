@@ -94,7 +94,7 @@ class Projects extends StatelessWidget {
                               borderRadius: BorderRadius.circular(12),
                             ),
                           ),
-                          child: SelectableText(
+                          child: Text(
                             "GPT VOICE ASSISTANT",
                             style: GoogleFonts.oswald(
                               color: Colors.white,
@@ -114,7 +114,7 @@ class Projects extends StatelessWidget {
                               borderRadius: BorderRadius.circular(12),
                             ),
                           ),
-                          child: SelectableText(
+                          child: Text(
                             "ANDROID VOICE ASSISTANT",
                             style: GoogleFonts.oswald(
                               color: Colors.white,
@@ -134,7 +134,7 @@ class Projects extends StatelessWidget {
                               borderRadius: BorderRadius.circular(12),
                             ),
                           ),
-                          child: SelectableText(
+                          child: Text(
                             "ROOBOT - DISCORD BOT",
                             style: GoogleFonts.oswald(
                               color: Colors.white,
@@ -154,7 +154,7 @@ class Projects extends StatelessWidget {
                               borderRadius: BorderRadius.circular(12),
                             ),
                           ),
-                          child: SelectableText(
+                          child: Text(
                             "TIC-TAC-TOE",
                             style: GoogleFonts.oswald(
                               color: Colors.white,
@@ -174,7 +174,7 @@ class Projects extends StatelessWidget {
                               borderRadius: BorderRadius.circular(12),
                             ),
                           ),
-                          child: SelectableText(
+                          child: Text(
                             "ANTWEIGHT COMBAT ROBOT",
                             style: GoogleFonts.oswald(
                               color: Colors.white,
@@ -194,7 +194,7 @@ class Projects extends StatelessWidget {
                               borderRadius: BorderRadius.circular(12),
                             ),
                           ),
-                          child: SelectableText(
+                          child: Text(
                             "BEETLEWEIGHT COMBAT ROBOT",
                             style: GoogleFonts.oswald(
                               color: Colors.white,
@@ -331,7 +331,7 @@ void _popup(context, String imagePath, String heading, String title,
                                                             color:
                                                                 kPrimaryColor),
                                                       ),
-                                                      child: SelectableText(
+                                                      child: Text(
                                                         b1,
                                                         style: TextStyle(
                                                           fontSize: 13.0,
@@ -359,7 +359,7 @@ void _popup(context, String imagePath, String heading, String title,
                                                             color:
                                                                 kPrimaryColor),
                                                       ),
-                                                      child: SelectableText(
+                                                      child: Text(
                                                         b2,
                                                         style: TextStyle(
                                                           fontSize: 13.0,

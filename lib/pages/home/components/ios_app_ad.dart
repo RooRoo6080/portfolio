@@ -99,7 +99,7 @@ class IosAppAd extends StatelessWidget {
                                     padding: EdgeInsets.all(20),
                                     foregroundColor: Colors.white,
                                   ),
-                                  child: SelectableText(
+                                  child: Text(
                                     "LEARN MORE",
                                     style: TextStyle(
                                       fontSize: 13.0,
@@ -119,7 +119,7 @@ class IosAppAd extends StatelessWidget {
                                     foregroundColor: kPrimaryColor,
                                     side: BorderSide(color: kPrimaryColor),
                                   ),
-                                  child: SelectableText(
+                                  child: Text(
                                     "TRY IT",
                                     style: TextStyle(
                                       fontSize: 13.0,
@@ -144,8 +144,8 @@ class IosAppAd extends StatelessWidget {
                                 foregroundColor: kPrimaryColor,
                                 side: BorderSide(color: kPrimaryColor),
                               ),
-                              child: SelectableText(
-                                "  VIEW CODE",
+                              child: Text(
+                                "VIEW CODE",
                                 style: TextStyle(
                                   fontSize: 13.0,
                                   fontWeight: FontWeight.bold,
