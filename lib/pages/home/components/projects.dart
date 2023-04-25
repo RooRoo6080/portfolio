@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_wrapper.dart';
 import 'package:web_portfolio/utils/constants.dart';
 import 'package:web_portfolio/utils/screen_helper.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Projects extends StatelessWidget {
   @override
@@ -36,7 +37,7 @@ class Projects extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
+                        SelectableText(
                           "OTHER\nPROJECTS",
                           style: GoogleFonts.oswald(
                             color: Colors.white,
@@ -48,7 +49,7 @@ class Projects extends StatelessWidget {
                         SizedBox(
                           height: 10.0,
                         ),
-                        Text(
+                        SelectableText(
                           "This is a random text about the project, I should have used the regular lorem ipsum text, but I am too lazy to search for that. This should be long enough",
                           style: TextStyle(
                             color: kCaptionColor,
@@ -71,7 +72,20 @@ class Projects extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            _popup(
+                              context,
+                              "assets/ios.png",
+                              "WINDOWS APP",
+                              "GPT VOICE ASSISTANT",
+                              "lorem ipsum dolor sit amet",
+                              [true, true],
+                              "WATCH IT",
+                              "VIEW CODE",
+                              Uri.parse("https://youtu.be/NkIl-Nfrgys"),
+                              Uri.parse("https://github.com/RooRoo6080/voice-assistant"),
+                            );
+                          },
                           style: ElevatedButton.styleFrom(
                             backgroundColor: kPrimaryColor,
                             padding: EdgeInsets.all(30),
@@ -80,7 +94,7 @@ class Projects extends StatelessWidget {
                               borderRadius: BorderRadius.circular(12),
                             ),
                           ),
-                          child: Text(
+                          child: SelectableText(
                             "GPT VOICE ASSISTANT",
                             style: GoogleFonts.oswald(
                               color: Colors.white,
@@ -100,7 +114,7 @@ class Projects extends StatelessWidget {
                               borderRadius: BorderRadius.circular(12),
                             ),
                           ),
-                          child: Text(
+                          child: SelectableText(
                             "ANDROID VOICE ASSISTANT",
                             style: GoogleFonts.oswald(
                               color: Colors.white,
@@ -120,7 +134,7 @@ class Projects extends StatelessWidget {
                               borderRadius: BorderRadius.circular(12),
                             ),
                           ),
-                          child: Text(
+                          child: SelectableText(
                             "ROOBOT - DISCORD BOT",
                             style: GoogleFonts.oswald(
                               color: Colors.white,
@@ -140,7 +154,7 @@ class Projects extends StatelessWidget {
                               borderRadius: BorderRadius.circular(12),
                             ),
                           ),
-                          child: Text(
+                          child: SelectableText(
                             "TIC-TAC-TOE",
                             style: GoogleFonts.oswald(
                               color: Colors.white,
@@ -160,7 +174,7 @@ class Projects extends StatelessWidget {
                               borderRadius: BorderRadius.circular(12),
                             ),
                           ),
-                          child: Text(
+                          child: SelectableText(
                             "ANTWEIGHT COMBAT ROBOT",
                             style: GoogleFonts.oswald(
                               color: Colors.white,
@@ -180,7 +194,7 @@ class Projects extends StatelessWidget {
                               borderRadius: BorderRadius.circular(12),
                             ),
                           ),
-                          child: Text(
+                          child: SelectableText(
                             "BEETLEWEIGHT COMBAT ROBOT",
                             style: GoogleFonts.oswald(
                               color: Colors.white,
@@ -200,4 +214,179 @@ class Projects extends StatelessWidget {
       ),
     );
   }
+}
+
+void _popup(context, String imagePath, String heading, String title,
+    String description, List<bool> buttons, String b1, String b2, Uri l1, Uri l2) {
+  showDialog<String>(
+      context: context,
+      builder: (BuildContext context) {
+        return Padding(
+          padding: const EdgeInsets.all(20.0),
+          child: Center(
+            child: LayoutBuilder(
+              builder: (context, constraints) {
+                return ResponsiveWrapper(
+                  defaultScale: false,
+                  child: Padding(
+                    padding:
+                        EdgeInsets.all(constraints.maxWidth > 720 ? 100 : 20),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: kBackgroundColor,
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Column(
+                          children: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              children: [
+                                IconButton(
+                                  onPressed: () {
+                                    Navigator.of(context).pop();
+                                  },
+                                  icon: Icon(Icons.close),
+                                  color: Colors.white,
+                                )
+                              ],
+                            ),
+                            Flex(
+                              direction: constraints.maxWidth > 720
+                                  ? Axis.horizontal
+                                  : Axis.vertical,
+                              children: [
+                                Expanded(
+                                  flex: constraints.maxWidth > 720.0 ? 1 : 0,
+                                  child: Image.asset(
+                                    imagePath,
+                                    width: constraints.maxWidth > 720.0
+                                        ? null
+                                        : 270.0,
+                                    height: constraints.maxWidth > 720.0
+                                        ? 800
+                                        : null,
+                                  ),
+                                ),
+                                Expanded(
+                                  flex: constraints.maxWidth > 720.0 ? 1 : 0,
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      SelectableText(
+                                        heading,
+                                        style: GoogleFonts.oswald(
+                                          color: kPrimaryColor,
+                                          fontWeight: FontWeight.w900,
+                                          fontSize: 16.0,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 15.0,
+                                      ),
+                                      SelectableText(
+                                        title,
+                                        style: GoogleFonts.oswald(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.w900,
+                                          height: 1.3,
+                                          fontSize: 35.0,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 10.0,
+                                      ),
+                                      SelectableText(
+                                        description,
+                                        style: TextStyle(
+                                          color: kCaptionColor,
+                                          height: 1.5,
+                                          fontSize: 15.0,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 25.0,
+                                      ),
+                                      Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Row(
+                                            children: [
+                                              buttons[0]
+                                                  ? OutlinedButton(
+                                                      onPressed: () {
+                                                        launchUrl(l1);
+                                                      },
+                                                      style: ElevatedButton
+                                                          .styleFrom(
+                                                        padding:
+                                                            EdgeInsets.all(20),
+                                                        foregroundColor:
+                                                            kPrimaryColor,
+                                                        side: BorderSide(
+                                                            color:
+                                                                kPrimaryColor),
+                                                      ),
+                                                      child: SelectableText(
+                                                        b1,
+                                                        style: TextStyle(
+                                                          fontSize: 13.0,
+                                                          fontWeight:
+                                                              FontWeight.bold,
+                                                        ),
+                                                      ),
+                                                    )
+                                                  : Container(),
+                                              SizedBox(
+                                                width: 10.0,
+                                              ),
+                                              buttons[1]
+                                                  ? OutlinedButton(
+                                                      onPressed: () {
+                                                        launchUrl(l2);
+                                                      },
+                                                      style: ElevatedButton
+                                                          .styleFrom(
+                                                        padding:
+                                                            EdgeInsets.all(20),
+                                                        foregroundColor:
+                                                            kPrimaryColor,
+                                                        side: BorderSide(
+                                                            color:
+                                                                kPrimaryColor),
+                                                      ),
+                                                      child: SelectableText(
+                                                        b2,
+                                                        style: TextStyle(
+                                                          fontSize: 13.0,
+                                                          fontWeight:
+                                                              FontWeight.bold,
+                                                        ),
+                                                      ),
+                                                    )
+                                                  : Container(),
+                                            ],
+                                          ),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                );
+              },
+            ),
+          ),
+        );
+      });
 }

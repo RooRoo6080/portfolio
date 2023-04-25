@@ -41,7 +41,7 @@ class WebsiteAd extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
+                        SelectableText(
                           "WEBSITE",
                           style: GoogleFonts.oswald(
                             color: kPrimaryColor,
@@ -52,7 +52,7 @@ class WebsiteAd extends StatelessWidget {
                         SizedBox(
                           height: 15.0,
                         ),
-                        Text(
+                        SelectableText(
                           "EVOLVING NAGA\nRESORT WEBSITE",
                           style: GoogleFonts.oswald(
                             color: Colors.white,
@@ -64,7 +64,7 @@ class WebsiteAd extends StatelessWidget {
                         SizedBox(
                           height: 10.0,
                         ),
-                        Text(
+                        SelectableText(
                           "This is a random text about the project, I should have used the regular lorem ipsum text, but I am too lazy to search for that. This should be long enough",
                           style: TextStyle(
                             color: kCaptionColor,
@@ -89,7 +89,7 @@ class WebsiteAd extends StatelessWidget {
                                     padding: EdgeInsets.all(20),
                                     foregroundColor: Colors.white,
                                   ),
-                                  child: Text(
+                                  child: SelectableText(
                                     "LEARN MORE",
                                     style: TextStyle(
                                       fontSize: 13.0,
@@ -109,7 +109,7 @@ class WebsiteAd extends StatelessWidget {
                                     foregroundColor: kPrimaryColor,
                                     side: BorderSide(color: kPrimaryColor),
                                   ),
-                                  child: Text(
+                                  child: SelectableText(
                                     "TRY IT",
                                     style: TextStyle(
                                       fontSize: 13.0,
@@ -134,7 +134,7 @@ class WebsiteAd extends StatelessWidget {
                                 foregroundColor: kPrimaryColor,
                                 side: BorderSide(color: kPrimaryColor),
                               ),
-                              child: Text(
+                              child: SelectableText(
                                 "  VIEW CODE",
                                 style: TextStyle(
                                   fontSize: 13.0,

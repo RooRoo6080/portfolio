@@ -51,7 +51,7 @@ class IosAppAd extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
+                        SelectableText(
                           "IOS APP",
                           style: GoogleFonts.oswald(
                             color: kPrimaryColor,
@@ -62,7 +62,7 @@ class IosAppAd extends StatelessWidget {
                         SizedBox(
                           height: 15.0,
                         ),
-                        Text(
+                        SelectableText(
                           "UNIVERSAL\nSMART HOME APP",
                           style: GoogleFonts.oswald(
                             color: Colors.white,
@@ -74,7 +74,7 @@ class IosAppAd extends StatelessWidget {
                         SizedBox(
                           height: 10.0,
                         ),
-                        Text(
+                        SelectableText(
                           "This is a random text about the project, I should have used the regular lorem ipsum text, but I am too lazy to search for that. This should be long enough",
                           style: TextStyle(
                             color: kCaptionColor,
@@ -99,7 +99,7 @@ class IosAppAd extends StatelessWidget {
                                     padding: EdgeInsets.all(20),
                                     foregroundColor: Colors.white,
                                   ),
-                                  child: Text(
+                                  child: SelectableText(
                                     "LEARN MORE",
                                     style: TextStyle(
                                       fontSize: 13.0,
@@ -119,7 +119,7 @@ class IosAppAd extends StatelessWidget {
                                     foregroundColor: kPrimaryColor,
                                     side: BorderSide(color: kPrimaryColor),
                                   ),
-                                  child: Text(
+                                  child: SelectableText(
                                     "TRY IT",
                                     style: TextStyle(
                                       fontSize: 13.0,
@@ -144,7 +144,7 @@ class IosAppAd extends StatelessWidget {
                                 foregroundColor: kPrimaryColor,
                                 side: BorderSide(color: kPrimaryColor),
                               ),
-                              child: Text(
+                              child: SelectableText(
                                 "  VIEW CODE",
                                 style: TextStyle(
                                   fontSize: 13.0,
