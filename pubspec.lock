@@ -301,14 +301,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.2.0"
-  smooth_scroll_web:
-    dependency: "direct main"
-    description:
-      name: smooth_scroll_web
-      sha256: "48187ca9e7917a7215ba219ebb4d9f8258726756deee7ec9f0a814bb14fa4cb0"
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.0.4"
   source_span:
     dependency: transitive
     description:
