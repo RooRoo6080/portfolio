@@ -5,7 +5,7 @@ class CarouselItemModel {
   final Widget image;
 
   CarouselItemModel({
-    required this.text,
-    required this.image,
+    this.text,
+    this.image,
   });
 }
