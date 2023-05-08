@@ -18,17 +18,17 @@ List<CarouselItemModel> carouselItems = List.generate(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisSize: MainAxisSize.min,
         children: [
-          SelectableText(
-            "TITLE",
-            style: GoogleFonts.oswald(
-              color: kPrimaryColor,
-              fontWeight: FontWeight.w900,
-              fontSize: 16.0,
-            ),
-          ),
-          SizedBox(
-            height: 18.0,
-          ),
+          // SelectableText(
+          //   "TITLE",
+          //   style: GoogleFonts.oswald(
+          //     color: kPrimaryColor,
+          //     fontWeight: FontWeight.w900,
+          //     fontSize: 16.0,
+          //   ),
+          // ),
+          // SizedBox(
+          //   height: 18.0,
+          // ),
           SelectableText(
             "REUEL\nJOSEPH",
             style: GoogleFonts.oswald(
@@ -42,7 +42,7 @@ List<CarouselItemModel> carouselItems = List.generate(
             height: 10.0,
           ),
           SelectableText(
-            "tagline tagline tagline tagline tagline tagline",
+            "A passionate student programmer, engineer,\ngraphic designer, and more!",
             style: TextStyle(
               color: kCaptionColor,
               fontSize: 15.0,
@@ -105,7 +105,7 @@ List<CarouselItemModel> carouselItems = List.generate(
           ),
           SizedBox(height: 10),
           SelectableText(
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "Hi! I'm Reuel, a student at Bellarmine College Preparatory.\nI love programming unique apps in my free time alongisde my other hobbies. I've built a mobile app (Trailblazer) that won a hackathon with nearly 900 participants. Jumping on the AI trend much earlier than many, I built a few GPT-3 based voice assistant and chatbot programs before ChatGPT was even released. Later, I used this knowledge to make a browser extension that has over 300 installs (SearchGPT).\nAside from programming, I'm on the leadership team of my school's combat robotics club. There, I lead peers through the process of designing and creating a 3lb combat robot. I'm also an organizer of our public event which draws competitors from all over California.",
             style: TextStyle(
               color: kCaptionColor,
               height: 1.5,

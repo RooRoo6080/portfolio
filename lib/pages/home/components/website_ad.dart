@@ -43,7 +43,7 @@ class WebsiteAd extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         SelectableText(
-                          "WEBSITE",
+                          "CHROME EXTENSION",
                           style: GoogleFonts.oswald(
                             color: kPrimaryColor,
                             fontWeight: FontWeight.w900,
@@ -54,7 +54,7 @@ class WebsiteAd extends StatelessWidget {
                           height: 15.0,
                         ),
                         SelectableText(
-                          "EVOLVING NAGA\nRESORT WEBSITE",
+                          "SEARCHGPT",
                           style: GoogleFonts.oswald(
                             color: Colors.white,
                             fontWeight: FontWeight.w900,
@@ -66,7 +66,7 @@ class WebsiteAd extends StatelessWidget {
                           height: 10.0,
                         ),
                         SelectableText(
-                          "This is a random text about the project, I should have used the regular lorem ipsum text, but I am too lazy to search for that. This should be long enough",
+                          "Integrate OpenAI's GPT-3 model responses to your Google search queries. Get summarized results in seconds by using the power of OpenAI's GPT-3 models to enhance Google searches with artificial intelligence.\n\nFeatured on the Chrome Web Store\nOver 300 installs",
                           style: TextStyle(
                             color: kCaptionColor,
                             height: 1.5,
@@ -157,7 +157,7 @@ class WebsiteAd extends StatelessWidget {
                   Expanded(
                     flex: constraints.maxWidth > 720.0 ? 1 : 0,
                     child: Image.asset(
-                      "assets/laptop.png",
+                      "assets/searchgpt.png",
                       width: constraints.maxWidth > 720.0 ? null : 350.0,
                     ),
                   ),

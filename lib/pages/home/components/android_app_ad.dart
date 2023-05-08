@@ -42,7 +42,7 @@ class IosAppAd extends StatelessWidget {
                   Expanded(
                     flex: constraints.maxWidth > 720.0 ? 1 : 0,
                     child: Image.asset(
-                      "assets/ios.png",
+                      "assets/trailblazer.png",
                       width: constraints.maxWidth > 720.0 ? null : 350.0,
                     ),
                   ),
@@ -53,7 +53,7 @@ class IosAppAd extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         SelectableText(
-                          "IOS APP",
+                          "ANDROID APP",
                           style: GoogleFonts.oswald(
                             color: kPrimaryColor,
                             fontWeight: FontWeight.w900,
@@ -64,7 +64,7 @@ class IosAppAd extends StatelessWidget {
                           height: 15.0,
                         ),
                         SelectableText(
-                          "UNIVERSAL\nSMART HOME APP",
+                          "TRAILBLAZER\nGPS-LESS TRACKER",
                           style: GoogleFonts.oswald(
                             color: Colors.white,
                             fontWeight: FontWeight.w900,
@@ -76,7 +76,7 @@ class IosAppAd extends StatelessWidget {
                           height: 10.0,
                         ),
                         SelectableText(
-                          "This is a random text about the project, I should have used the regular lorem ipsum text, but I am too lazy to search for that. This should be long enough",
+                          "Thousands of people go missing in the woods every year. Trailblazer will help guide you back to safety in such a scenario. Once started, it will track your phone's location using no external factors (such as GPS). This means that Trailblazer has you covered, wherever you go. The map created by the app can help you retrace your steps back to safety.\n\nWinner of the 'Funathon' Hackathon",
                           style: TextStyle(
                             color: kCaptionColor,
                             height: 1.5,

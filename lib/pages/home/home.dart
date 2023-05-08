@@ -1,11 +1,10 @@
 import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:web_portfolio/pages/home/components/carousel.dart';
 import 'package:web_portfolio/pages/home/components/footer.dart';
-import 'package:web_portfolio/pages/home/components/ios_app_ad.dart';
-import 'package:web_portfolio/pages/home/components/portfolio_stats.dart';
+import 'package:web_portfolio/pages/home/components/android_app_ad.dart';
+// import 'package:web_portfolio/pages/home/components/portfolio_stats.dart';
 import 'package:web_portfolio/pages/home/components/website_ad.dart';
 import 'package:web_portfolio/pages/home/components/projects.dart';
 import 'package:web_portfolio/utils/globals.dart';
@@ -26,11 +25,11 @@ class Home extends StatelessWidget {
               SizedBox(
                 height: 20.0,
               ),
-              WebsiteAd(),
+              IosAppAd(),
               SizedBox(
                 height: 70.0,
               ),
-              IosAppAd(),
+              WebsiteAd(),
               SizedBox(
                 height: 70.0,
               ),
@@ -38,10 +37,10 @@ class Home extends StatelessWidget {
               SizedBox(
                 height: 20.0,
               ),
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical: 28.0),
-                child: PortfolioStats(),
-              ),
+              // Padding(
+              //   padding: const EdgeInsets.symmetric(vertical: 28.0),
+              //   child: PortfolioStats(),
+              // ),
               SizedBox(
                 height: 20.0,
               ),
