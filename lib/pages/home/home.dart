@@ -14,38 +14,40 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       key: Globals.scaffoldKey,
-      body: ListView(
-        physics: CustomPageViewScrollPhysics(),
-        controller: AdjustableScrollController(60),
+      body: Stack(
         children: [
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Carousel(),
-              SizedBox(
-                height: 20.0,
+          Scrollbar(
+            child: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Carousel(),
+                  SizedBox(
+                    height: 20.0,
+                  ),
+                  IosAppAd(),
+                  SizedBox(
+                    height: 70.0,
+                  ),
+                  WebsiteAd(),
+                  SizedBox(
+                    height: 70.0,
+                  ),
+                  Projects(),
+                  SizedBox(
+                    height: 20.0,
+                  ),
+                  // Padding(
+                  //   padding: const EdgeInsets.symmetric(vertical: 28.0),
+                  //   child: PortfolioStats(),
+                  // ),
+                  SizedBox(
+                    height: 20.0,
+                  ),
+                  Footer(),
+                ],
               ),
-              IosAppAd(),
-              SizedBox(
-                height: 70.0,
-              ),
-              WebsiteAd(),
-              SizedBox(
-                height: 70.0,
-              ),
-              Projects(),
-              SizedBox(
-                height: 20.0,
-              ),
-              // Padding(
-              //   padding: const EdgeInsets.symmetric(vertical: 28.0),
-              //   child: PortfolioStats(),
-              // ),
-              SizedBox(
-                height: 20.0,
-              ),
-              Footer(),
-            ],
+            ),
           ),
         ],
       ),
